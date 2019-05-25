@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicios de Validación</title>
+  <style>
+    body {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <h1>Validaciones :D</h1>
+
+  <script type="text/javascript">
+
+    let pesosPorDia = parseFloat(prompt('¿Cuanto ganas por día?'));
+    let cantidadPorAhorrar = parseFloat(prompt('¿Cuanto tienes que ahorrar?'));
+    let cantidadDeDias = parseInt(prompt('¿Cuantos días tienes para ahorrar?'));
+
+    let ahorroFinal = pesosPorDia * cantidadDeDias;
+
+    let alcanzanLosAhorros = ahorroFinal >= cantidadPorAhorrar;
+
+    if(alcanzanLosAhorros) {
+      alert('¡Yey, podrás ir al Google I/O!');
+    } else {
+      alert('Lo siento, no podrás ir este año T_T');
+    }
+
+
+    let edad = 20;
+
+    if(edad >= 18) {
+      alert('Ve a perderte en el alcohol');
+    } else if(edad < 18 && edad > 5) {
+      alert('Puedes quedarte en casa a jugar sanamente');
+    } else {
+      alert('Tienes que dormir para crecer grande y fuerte');
+    }
+
+  </script>
+
+</body>
+</html>
